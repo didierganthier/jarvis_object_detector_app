@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jarvis_object_detector_app/HomePage.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 class MySplashPage extends StatefulWidget {
@@ -11,6 +12,7 @@ class _MySplashPageState extends State<MySplashPage> {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: 5,
+      navigateAfterSeconds: HomePage(),
       imageBackground: Image.asset("assets/back.jpg").image,
       useLoader: true,
       loaderColor: Colors.pink,
