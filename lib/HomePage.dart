@@ -18,8 +18,8 @@ class _HomePageState extends State<HomePage> {
   loadModel() async
   {
     await Tflite.loadModel(
-      model: "mobilenet_v1_1.0_224.tflite",
-      labels: "mobilenet_v1_1.0_224.txt"
+      model: "assets/mobilenet_v1_1.0_224.tflite",
+      labels: "assets/mobilenet_v1_1.0_224.txt"
     );
   }
 
@@ -143,6 +143,22 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
+                Center(
+                  child: Container(
+                    margin: EdgeInsets.only(top: 55.0),
+                    child: SingleChildScrollView(
+                      child: Text(
+                        result,
+                        style: TextStyle(
+                          backgroundColor: Colors.black87,
+                          fontSize: 30.0,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           ),
