@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jarvis_object_detector_app/MySplashPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,6 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Jarvis Object Detector App',
+      home: MySplashPage(),
     );
   }
 }
